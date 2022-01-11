@@ -1,0 +1,21 @@
+<nav>
+    <ul class="pagination pg-teal">
+        <li class="p-2 page-item active"><a class="page-link" mdbWavesEffect>Bloque 1</a></li>
+        <li class="p-2 page-item"><a class="page-link" mdbWavesEffect>Bloque 2</a></li>
+        <li class="p-2 page-item"><a class="page-link" mdbWavesEffect>Bloque 3</a></li>
+    </ul>
+</nav>
+<swiper [config]="config">
+    <div class="swiper-wrapper">
+        <div class="card2 swiper-slide" *ngFor="let uno of Images">
+            <img [src]="uno.src" />
+            <div class="info">
+                <p>{{uno.name}}</p>
+                <a href="{{uno.url}}" target="_blank"><button>Ver mas</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</swiper>
