@@ -6,12 +6,11 @@ import { InformaticosComponent } from './pages/informaticos/informaticos.compone
 import { InicioComponent } from './pages/inicio/inicio.component';
 const routes: Routes = [
 {
-  path:'',
+  path:'',component:InicioComponent,
   children:[
     { path:'libros', component: LibrosComponent},
-    { path:'audivisuales', component: AudiovisualesComponent},
+    { path:'audiovisuales', component: AudiovisualesComponent},
     { path:'informaticos', component: InformaticosComponent},
-    { path:'Inicio', component:InicioComponent },
     {path:'**', redirectTo:'Inicio'},
   ]
 

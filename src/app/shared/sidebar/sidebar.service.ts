@@ -22,10 +22,13 @@ export class SidebarService {
           url:'/Materiales/libros'
         },
         {
-          title: 'Materiales audiovisuales'
+          title: 'Materiales audiovisuales',
+
+          url:'/Materiales/audiovisuales'
         },
         {
-          title: 'Materiales informáticos'
+          title: 'Materiales informáticos',
+          url:'/Materiales/informaticos'
         }
         ,
         {
